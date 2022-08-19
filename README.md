@@ -1,2 +1,2 @@
 # LeetCode
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+A repo to chronicle my journey of becoming an algo master 🥷🏽
