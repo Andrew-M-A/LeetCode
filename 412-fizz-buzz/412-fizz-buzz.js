@@ -2,18 +2,21 @@
  * @param {number} n
  * @return {string[]}
  */
-var fizzBuzz = function(n) {
-    let answer = [];
-    for(let i = 1; i <= n; i++) {
-        if(i % 3 === 0 && i % 5 === 0) {
-            answer.push('FizzBuzz');
-        } else if(i % 3 === 0) {
-            answer.push('Fizz');
-        } else if(i % 5 === 0) {
-            answer.push('Buzz');
-        } else {
-           answer.push(i.toString());
+var fizzBuzz = function (n) {
+    let divisors = [
+        [3, 'Fizz'],
+        [5, 'Buzz'],
+    ];
+
+    let output = [];
+    for (let i = 1; i <= n; i++) {
+        let newString = '';
+        for (let j = 0; j < divisors.length; j++) {
+            if (i % divisors[j][0] === 0) {
+                newString += divisors[j][1];
+            }
         }
+        output.push(newString.length ? newString : i.toString());
     }
-    return answer;
+    return output;
 };
