@@ -2,6 +2,15 @@
 
 <p>Return the running sum of <code>nums</code>.</p>
 
+<h1> PSEUDO CODE </h1>
+<p>
+// define a variable with a value of 0 to keep track of the previous value <br>
+// loop through the array <br>
+// set index[i]to the value of the variable defined in step 1 + nums[i] <br>
+// re-assign nums[i] to sum <br>
+// return nums from the function <br>
+</p>
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
