@@ -12,8 +12,7 @@ var fizzBuzz = function(n) {
         } else if (i % 5 === 0) {
             fizzArr.push('Buzz')
         } else {
-            let strI = i.toString();
-            fizzArr.push(strI);
+            fizzArr.push(i.toString())
         }
     }
     return fizzArr;
